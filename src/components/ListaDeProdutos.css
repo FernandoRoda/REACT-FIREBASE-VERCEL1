@@ -1,0 +1,108 @@
+.adicionar-produto button, .remover-produto {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 10px;
+    position: relative; /* Adicionamos position: relative para definir o contexto de posicionamento dos botões */
+}
+
+.adicionar-produto button:hover, .remover-produto:hover {
+    background-color: #0056b3;
+}
+
+.adicionar-produto input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.adicionar-produto label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.produto {
+    list-style: none;
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateX(-20px);
+}
+
+.produto:hover .remover-produto {
+    display: block;
+}
+
+.remover-produto {
+    display: none;
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: #dc3545;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 2;
+}
+.produto:hover .editar-produto {
+    display: block;
+}
+
+.editar-produto {
+    display: none;
+    position: absolute;
+    top: 30%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: #35a7dc;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.botao-logout {
+    position: fixed;
+    top: 10px;
+    right: 40px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0 0 40px;
+}
+
+h1 {
+    margin: 80px 0 20px 0;
+}
+
+.valor-total {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
